@@ -1,6 +1,6 @@
 const http = require('http');
 const port = process.env.PORT || 3000
-
+var onlyPath = require('path').dirname('C:\\Users\\trmin\\OneDrive\\Máy tính\\IoTGit\\a.jpg');
 const server = http.createServer((req, res) => {
 	var html_head = [
         '<!DOCTYPE html>',
@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
                 '<center>',
 				'<h1>Bài tập IoT</h1>',
 				'<h2>Trương Minh Toàn - M2522025</h2>',
+				'<img src="https://media.istockphoto.com/id/932066990/vi/vec-to/iot-h%C3%ACnh-%E1%BA%A3nh-minh-h%E1%BB%8Da.jpg?s=612x612&w=is&k=20&c=G9FSPYmbaySwaDSglr-rBZXpzdK7m-UBeiu4m3ESxYg="/>',
 				'</center>',
             '</body>',
         '</html>'
